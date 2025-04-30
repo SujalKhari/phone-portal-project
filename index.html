@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Store</title>
+    <style>
+      <!--body {
+            font-family: Arial, sans-serif;
+            padding: 1%;
+            text-align: center;
+      }-->
+        .headh1{
+    font-size: 5vw;
+    color: greenyellow;
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+    0 0 0.125em hsla(320, 100%, 60%, 0.5),
+    -0.25em -0.125em 0.125em hsla(343, 26%, 5%, 0.125),
+    0.25em 0.125em 0.125em hsla(198, 12%, 22%, 0.25);
+}
+.headh1:hover{
+    font-size: 100px;
+    cursor: pointer;
+    text-shadow: 0 0 1em hsla(320, 91%, 13%, 0.5),
+    0 0 0.125em hsla(320, 14%, 8%, 0.5),
+    -0.25em -0.125em 0.125em hsla(343, 26%, 5%, 0.125),
+    0.25em 0.125em 0.125em hsla(198, 12%, 22%, 0.25);
+}
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .h4{
+            display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        position: relative;
+        bottom: 11p;  
+        border-radius: 2.5em;
+        word-spacing: 10px;
+        display: inline-block;
+        }
+        .HOME:hover{ color: #3498db;
+        }
+        .home-html:hover{
+            font-size: x-large;
+            color: green;
+        }
+        .about-html:hover{
+            font-size: x-large;
+            color: green;
+        }
+        .contact-html:hover{
+            font-size: x-large;
+            color: green;
+        }
+        .support-html:hover{
+            font-size: x-large;
+            color: green;
+        }
+
+-->
+        body {
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+  font-family: "Acme";
+}
+.container {
+  max-width: 100px;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+.onepluse:hover:nth-child(2) {
+  box-shadow: 10px 10px 50px rgb(15, 55, 231);
+}
+.onepluse {
+  position: relative;
+  margin: 20px 0;
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  transition: 1s;
+}
+.onepluse:hover {
+  z-index: 1111;
+  transform: perspective(2000px) rotate(10deg);
+
+  box-shadow: 10px 10px 500px rgb(223, 62, 17);
+}
+.onepluse .img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s;
+}
+.onepluse .img-container img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.onepluse:hover .img-container {
+  transform: rotateY(-135deg);
+}
+.onepluse .onepluse-details {
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  color: #000;
+}
+.onepluse .onepluse-details h2 {
+  margin: 0;
+  padding: 0.5em 0;
+  text-transform: uppercase;
+  font-size: 2em;
+  color: #ed363a;
+}
+.onepluse .onepluse-details p {
+  margin: 0;
+  padding: 0;
+  line-height: 25px;
+  font-size: 1.1em;
+}  
+
+  body {
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+  font-family: "Acme";
+}
+.container {
+  max-width: 1000px;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.apple:hover:nth-child(2) {
+  box-shadow: 10px 10px 500px rgb(0, 0, 1);
+}
+.apple {
+  position: relative;
+  margin: 20px 0;
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  transition: 1s;
+}
+.apple:hover {
+  z-index: 1111;
+  transform: perspective(2000px) rotate(-10deg);
+
+  box-shadow: 10px 10px 50px rgb(223, 62, 17);
+}
+.apple .img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s;
+}
+.apple .img-container img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.apple:hover .img-container {
+  transform: rotateY(-135deg);
+}
+.apple .apple-details {
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  color: #000;
+}
+.apple .apple-details h2 {
+  margin: 0;
+  padding: 0.5em 0;
+  text-transform: uppercase;
+  font-size: 2em;
+  color: #ed363a;
+}
+.apple .apple-details p {
+  margin: 0;
+  padding: 0;
+  line-height: 25px;
+  font-size: 1.1em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+    font-family: "Acme";
+  }
+  .container {
+    max-width: 1000px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .oppo:hover:nth-child(2) {
+    box-shadow: 10px 10px 50px rgb(30, 110, 10);
+  }
+  .oppo {
+    position: relative;
+    margin: 20px 0;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+  }
+  .oppo:hover {
+    z-index: 1111;
+    transform: perspective(2000px) rotate(-10deg);
+    box-shadow: 10px 10px 50px rgb(61, 152, 11);
+  }
+  .oppo .img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+  }
+  .oppo .img-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .oppo:hover .img-container {
+    transform: rotateY(-135deg);
+  }
+  .oppo .oppo-details {
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #000;
+  }
+  .oppo .oppo-details h2 {
+    margin: 0;
+    padding: 0.5em 0;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #ed363a;
+  }
+  .oppo .oppo-details p {
+    margin: 0;
+    padding: 0;
+    line-height: 25px;
+    font-size: 1.1em;
+  }
+                                <!--vivo-->
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+    font-family: "Acme";
+    background: #000;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .vivo:hover:nth-child(2) {
+    box-shadow: 10px 10px 50px rgb(15, 55, 231);
+  }
+  .vivo {
+    position: relative;
+    margin: 20px 0;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+  }
+  .vivo:hover {
+    z-index: 1111;
+    transform: perspective(2000px) rotate(-10deg);
+    box-shadow: 10px 10px 50px rgb(70, 24, 221);
+  }
+  .vivo .img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+  }
+  .vivo .img-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .vivo:hover .img-container {
+    transform: rotateY(-135deg);
+  }
+  .vivo .vivo-details {
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #000;
+  }
+  .vivo .vivo-details h2 {
+    margin: 0;
+    padding: 0.5em 0;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #ed363a;
+  }
+  .vivo .vivo-details p {
+    margin: 0;
+    padding: 0;
+    line-height: 25px;
+    font-size: 1.1em;
+  }
+  .home {
+  width: 1366px;
+  height: 768px;
+  display: flex;
+  gap: 16px;
+}
+  footer{
+    text-align: center;
+  }
+ 
+  
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>
+            <div class="headh1"> <a href="./index.html"> GADGETS FOR YOU</a></h1>
+        <p>Your one-stop shop for the latest smartphones!</p>
+            <div class="h4">
+                <input type="search" placeholder="search" >  
+                <button type="reset"></button>
+                <input type="submit" value="GO!"> <br><br>
+                <a href="login.html" target="_blank"> LOGIN</a>
+                <a href="SIGNING.php" target="_blank"> SIGNIN</a>
+            </div> 
+    </header>
+  </div>
+                <DIV class="HOME" style="text-align: center;">
+                    <a class="home-html" href="./index.html" target=""> HOME</a>
+                    <a class="about-html" href="./about.html" target=""> ABOUT</a>
+                    <a class="contact-html" href="./contact.html" target=""> CONTACT</a>
+                    <a class="support-html" href="./support.html" target=""> SUPPORT</a>
+
+                </DIV>
+
+<h2> !!  ARE YOU SEARCHING FOR THE BEST SMART PHONE UNDER YOUR BUDGET.. WE ARE HEARE TO HELP YOU IN FINDING THE BEST PHONE..... </h2>
+<center>
+  <div class="home">
+    <div class="onepluse">
+        <div class="img-container">
+        <img src="https://www.xda-developers.com/files/2018/09/oneplus-logo.jpg" width="100px" >
+        </div>
+        
+        <div class="onepluse-details">
+            <h2>ONE+</h2>
+            <p>OnePlus phones are known for their premium build quality, fast charging, and near-stock Android experience with OxygenOS.
+            </p><BR>
+            <!--<p>Price: </p>-->
+            <a href="./oneplus.html">View Details</a>
+        </div>
+</div>
+
+        <div class="apple">
+            <div class="img-container">
+                <img src="https://1.bp.blogspot.com/-IHIprxC2Za0/UBg14NttLLI/AAAAAAAAA28/nyBH-GeEX7Y/s1600/white-apple-logo-wallpaper.jpg" >
+</div>
+            <div class="apple-details">
+            <h2>APPLE</h2>
+            <p>Apple is a multinational technology company renowned for its hardware and software products, including the iPhone, Mac computers, iOS and macOS operating systems, and services like the App Store and iCloud.
+            </p><BR>
+            <a href="./apple.html">View Details</a>
+        </div>
+    </div>
+
+        <div class="oppo">
+            <div class="img-container">
+              <img src="https://i.pinimg.com/736x/1f/89/89/1f898983d4c24f4564942aa880191305.jpg" >
+            </div>
+            <div class="oppo-details">
+            <h2>OPPO</h2>
+            <p>Oppo is a Chinese smartphone manufacturer recognized for its innovative camera technology, sleek designs, and a range of Android-based smartphones that cater to various market segments.
+            </p><BR>
+            <a href="./oppo.html">View Details</a>
+        </div>
+</div>
+        <div class="vivo">
+            <div class="img-container">
+                <img src="http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_1033267012??hei=64&wid=64&qlt=50" >
+            </div>
+            <div class="vivo-details">
+            <h2>SAMSUNG</h2>
+            <p>Samsung is a South Korean multinational conglomerate founded in 1938. A global leader in consumer electronics, it produces smartphones, tablets, TVs, and appliances. Samsung is also prominent in semiconductor manufacturing and tech innovation, emphasizing quality and design.</p><BR>
+            <a href="./samsung.html">View Details</a>
+        </div>
+    </div>
+    </div>
+    <div> 
+      <h1 style="text-align:right ;">  <a href="mailto:gadgetforyou@gmail.com"><img src="https://tse1.mm.bing.net/th?id=OIP.QOSFsLTwDWT-z3pKMBIFvgHaHa&pid=Api&P=0&h=180" width="50" ></a>
+        <a href=":gadgets_for_you"><img src="https://tse1.mm.bing.net/th?id=OIP.mdNMeNAxQL1gWv0U3KAe1gHaHZ&pid=Api&P=0&h=180" width="50" ></a>
+
+      </h1>
+    </div>
+
+
+    <footer>
+        <p> 2023 Phone Store</p>
+        
+    </footer>
+</body>
+</html>
